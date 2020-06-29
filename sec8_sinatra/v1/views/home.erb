@@ -1,0 +1,17 @@
+<h1>Talleres del ciclo T1 -2020</h1>
+
+<div id="ruta">
+  <a href="/create">Nuevo taller</a>
+</div>
+
+<hr />
+
+<div id="lista-talleres">
+<% @files.drop(2).each do |file| %>
+  <% temp = File.basename(file, ".*") %>
+
+  <div>
+    <a href="<%= "/#{temp}"%>"><%= temp %></a>
+  </div>
+<% end %>
+</div>

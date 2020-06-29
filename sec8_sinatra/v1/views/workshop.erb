@@ -1,0 +1,19 @@
+<h1>Taller de <%= @name %></h1>
+
+<div id="ruta">
+  <a href="/">Volver</a>
+  <a href="/<%= @name %>/edit">Editar</a>
+</div>
+
+<hr />
+
+<div>
+  <p><%= @description %></p>
+</div>
+
+<div class="borrar">
+  <form action="/<%= @name %>" method="post">
+    <input type="hidden" name="_method" value="delete" />
+    <input type="submit" value="Eliminar" />
+  </form>
+</div>
