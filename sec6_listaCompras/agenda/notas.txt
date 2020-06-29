@@ -1,0 +1,5 @@
+Agregar un contacto con su nombre y numero
+Borrar un contacto en base al nombre
+Mostrar un numero en base al nombre
+Borrar todos los contactos
+Salir de la aplicación
